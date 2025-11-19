@@ -1,22 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Windows.Forms;
+using tcomp_barcode_printing.Repositories;
+using tcomp_barcode_printing.Services;
+using TcompEdniffDataSync.Services;
 
 namespace tcomp_barcode_printing
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            var services = new ServiceCollection();
+
+            // Register Typed HttpClient for SerialNumberRepository
+            services.AddHttpClient<ISerialNumber, SerialNumberRepository>(client =>
+            {
+                client.BaseAddress = new Uri(ConfigService.ApiBaseUrl);
+            });
+
+            var provider = services.BuildServiceProvider();
+
+            var serialNumberService = provider.GetRequiredService<ISerialNumber>();
+
+            Application.Run(new Form1(serialNumberService));
         }
     }
 }

@@ -22,23 +22,22 @@ namespace tcomp_barcode_printing.Repositories
             this.httpClient = httpClient;
         }
 
-        async Task<List<SerialNumber>> ISerialNumber.GetSerialNumbersAsync(string serialNumber, string orderNo)
+        async Task<List<ListSerialNumber>> ISerialNumber.GetSerialNumbersAsync(string orderNo, string serialNumber)
         {
-            MessageBox.Show("" + serialNumber + " "+ orderNo);
 
             string apiUrl = $"{ConfigService.ApiBaseUrl}SerialNumber/getSerialNumbersForBarcodePrint";
 
-            var payload = new { serialNumber = serialNumber, orderNo= orderNo };
-            string jsonPayload = JsonConvert.SerializeObject(payload);
-            var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+            var form = new MultipartFormDataContent();
+            form.Add(new StringContent(orderNo ?? "0"), "orderNo");
+            form.Add(new StringContent(serialNumber.ToString() ?? ""), "serialNumber");
 
-            var response = await httpClient.PostAsync(apiUrl, content);
-            response.EnsureSuccessStatusCode();
-
+            var response = await httpClient.PostAsync(apiUrl, form);
             string responseJson = await response.Content.ReadAsStringAsync();
-            var serialNumbers = JsonConvert.DeserializeObject<List<SerialNumber>>(responseJson);
 
-            return serialNumbers ?? new List<SerialNumber>();
+            return JsonConvert.DeserializeObject<List<ListSerialNumber>>(responseJson)
+                   ?? new List<ListSerialNumber>();
         }
+
+
     }
 }
