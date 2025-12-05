@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.FileProviders;
 using System;
 using System.IO;
 
@@ -13,11 +12,9 @@ namespace TcompEdniffDataSync.Services
         {
             try
             {
-                var filePath = Path.Combine(AppContext.BaseDirectory, "appsettings.json");
-                Console.WriteLine($"Config file path: {filePath}");
-
                 config = new ConfigurationBuilder()
-                    .AddJsonFile(filePath, optional: false, reloadOnChange: true)
+                    .SetBasePath(AppContext.BaseDirectory)           // FIX 1: Set correct folder
+                    .AddJsonFile("appsettings.json", false, true)     // FIX 2: Use only filename
                     .Build();
             }
             catch (Exception ex)

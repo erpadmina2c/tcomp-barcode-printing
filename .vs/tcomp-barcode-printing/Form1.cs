@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tcomp_barcode_printing.Methods;
 using tcomp_barcode_printing.Models;
 using tcomp_barcode_printing.Services;
 
@@ -19,6 +20,7 @@ namespace tcomp_barcode_printing
     {
         public ISerialNumber iserialnumber;
         public string printerAddress = "";
+        public ZPLTextWidth zPLTextWidth=new ZPLTextWidth();
 
         private BindingList<ListSerialNumber> serialnumbers = new BindingList<ListSerialNumber>();
 
@@ -57,15 +59,29 @@ namespace tcomp_barcode_printing
         {
             if (txt_po_number.Text?.Trim() != "" || txt_serial_no.Text?.Trim() != "")
             {
-                var data = await iserialnumber.GetSerialNumbersAsync(
+                try
+                {
+                    progressBar1.Visible = true;
+                    var data = await iserialnumber.GetSerialNumbersAsync(
                     txt_po_number.Text?.Trim() ?? "",
                     txt_serial_no.Text?.Trim() ?? ""
                 );
 
-                serialnumbers = new BindingList<ListSerialNumber>(data);
-                serialNumberGrid.DataSource = serialnumbers;
+                    serialnumbers = new BindingList<ListSerialNumber>(data);
+                    serialNumberGrid.DataSource = serialnumbers;
 
-                FormatSerialNumberGrid();
+                    FormatSerialNumberGrid();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    progressBar1.Visible = false;
+                }
+                finally
+                {
+                    // Hide progress bar
+                    progressBar1.Visible = false;
+                }
             }
             else
             {
@@ -78,6 +94,7 @@ namespace tcomp_barcode_printing
         {
             txt_po_number.Text = "";
             txt_serial_no.Text = "";
+            txt_serial_no2.Text = "";
             serialnumbers.Clear();
         }
 
@@ -86,6 +103,7 @@ namespace tcomp_barcode_printing
         {
             try
             {
+                progressBar1.Visible = true;
                 string FilePath = @"C:\PRINT\";
 
                 if (!Directory.Exists(FilePath))
@@ -120,14 +138,16 @@ namespace tcomp_barcode_printing
                 string printerAddress = File.ReadAllText(@"C:\PRINT\printerAddress.txt");
                 File.Copy(@"C:\PRINT\print.txt", printerAddress, true);
 
-                MessageBox.Show("Printed Successfully");
+               
 
                 txt_po_number.Text = "";
                 txt_serial_no.Text = "";
                 serialnumbers.Clear();
+                progressBar1.Visible = false;
             }
             catch (Exception ex)
             {
+                progressBar1.Visible = false;
                 MessageBox.Show("Printing failed!\n\n" + ex.Message);
             }
         }
@@ -191,6 +211,8 @@ namespace tcomp_barcode_printing
             serialNumberGrid.Columns["hard_disk_size"].HeaderText = "Hard Disk Size";
             serialNumberGrid.Columns["ram_type"].HeaderText = "RAM Type";
             serialNumberGrid.Columns["ram_size"].HeaderText = "RAM Size";
+            serialNumberGrid.Columns["keyboard"].HeaderText = "Key Board";
+            serialNumberGrid.Columns["lcd"].HeaderText = "LCD";
 
             serialNumberGrid.Columns["order_no"].DisplayIndex = 0;
             serialNumberGrid.Columns["serial_no"].DisplayIndex = 1;
@@ -206,5 +228,145 @@ namespace tcomp_barcode_printing
 
             serialNumberGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = tabControl1.SelectedIndex;
+
+            if (index == 0)
+            {
+                txt_po_number.Text = "";
+                txt_serial_no.Text = "";
+                serialnumbers.Clear();
+            }
+            else if (index == 1)
+            {
+                txt_serial_no2.Text = "";
+               
+                serialnumbers.Clear();
+            }
+        }
+
+        private void btn_print_2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+       
+                progressBar1.Visible = true;
+                string FilePath = @"C:\PRINT\";
+
+                if (!Directory.Exists(FilePath))
+                    Directory.CreateDirectory(FilePath);
+
+                File.WriteAllLines(@"C:\PRINT\print.txt", new string[] { "" });
+
+                foreach (ListSerialNumber serialNumber in serialnumbers)
+                {
+                    try
+                    {
+                        string[] format = File.ReadAllLines(@"C:\PRINT\SpecificationTagFormat.txt");
+
+                 
+                        string cleanedSerial = Regex.Replace(serialNumber.serial_no ?? "", @"\s+", "");
+                        string cleanedOriginalSerial = Regex.Replace(serialNumber.original_no ?? "", @"\s+", "");
+
+                      
+                        for (int count = 0; count < format.Length; count++)
+                        {
+                            format[count] = format[count].Replace("MAKE", serialNumber.make);
+                            format[count] = format[count].Replace("MODEL", serialNumber.model);
+                            format[count] = format[count].Replace("PROCESSOR", serialNumber.processor);
+                            format[count] = format[count].Replace("HARDDISK", serialNumber.hard_disk_size);
+                            format[count] = format[count].Replace("RAM", serialNumber.ram_size);
+                            format[count] = format[count].Replace("KEYBOARD", serialNumber.keyboard);
+                            format[count] = format[count].Replace("LCD", serialNumber.lcd);
+
+                            format[count] = format[count].Replace("OGBARCODEPRINT", cleanedOriginalSerial);
+                            format[count] = format[count].Replace("OGBARCODE", cleanedOriginalSerial);
+                            format[count] = format[count].Replace("BARCODEPRINT", cleanedSerial);
+                            format[count] = format[count].Replace("BARCODE", cleanedSerial);
+                            format[count] = format[count].Replace("QUANTITY", "1");
+                           
+                        }
+
+                        File.AppendAllLines(@"C:\PRINT\print.txt", format);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error processing serial number: " + serialNumber.serial_no +
+                                        "\n" + ex.Message);
+                    }
+                }
+
+                string printerAddress = File.ReadAllText(@"C:\PRINT\printerAddress2.txt");
+                File.Copy(@"C:\PRINT\print.txt", printerAddress, true);
+
+
+                txt_po_number.Text = "";
+                txt_serial_no.Text = "";
+                serialnumbers.Clear();
+                txt_serial_no2.Clear();
+                txt_serial_no2.Focus();
+                progressBar1.Visible = false;
+            }
+            catch (Exception ex)
+            {
+                progressBar1.Visible = false;
+                MessageBox.Show("Printing failed!\n\n" + ex.Message);
+            }
+        }
+
+        private async void btn_search2_Click(object sender, EventArgs e)
+        {
+           
+
+            try
+            {
+                progressBar1.Visible = true;
+
+                // Run DB call in background thread
+                var data = await Task.Run(() =>
+                    iserialnumber.getSerialNumberForSpecificationTag(
+                        txt_serial_no2.Text.Trim()
+                    )
+                );
+
+                if (data != null && data.Count > 0)
+                {
+                    if (serialnumbers.Count == 0)
+                    {
+                        serialnumbers = new BindingList<ListSerialNumber>();
+                        serialNumberGrid.DataSource = serialnumbers;
+                    }
+
+                    foreach (var item in data)
+                    {
+                        serialnumbers.Add(item);
+                    }
+
+                    FormatSerialNumberGrid();
+                    txt_serial_no2.Clear();
+                    txt_serial_no2.Focus();
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                progressBar1.Visible = false;
+            }
+        }
+
     }
 }
+
+
+

@@ -1,0 +1,10 @@
+{
+  "ApiSettings": {
+    "BaseUrl": "https://tcomp-erp-e4b5b4bqgnd5h6au.centralus-01.azurewebsites.net/api/"
+  },
+  "ConnectionStrings": {
+   // "DefaultConnection": "Data Source=192.168.11.7;Initial Catalog=EDNIFF-SHJ;User ID=sa;Password=shjshjshj;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;"
+   "DefaultConnection": "Data Source=192.168.2.6;Initial Catalog=EDNIFFDatabase;User ID=sa;Password=a2ca2ca2c;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;"
+
+  }
+}

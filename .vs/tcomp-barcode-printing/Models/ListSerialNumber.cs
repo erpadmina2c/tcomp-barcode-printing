@@ -43,6 +43,12 @@ namespace tcomp_barcode_printing.Models
         [Display(Name = "RAM Size")]
         public string ram_size { get; set; }
 
+        [Display(Name = "Key Board")]
+        public string keyboard { get; set; }
+
+        [Display(Name = "LCD")]
+        public string lcd { get; set; }
+
         [Display(Name = "Send To TComp")]
         public string send_to_tcomp { get; set; }
 

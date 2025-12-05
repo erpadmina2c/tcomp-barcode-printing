@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|c:\\users\\habeebrahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|c:\\users\\habeebrahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\repositories\\serialnumberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:repositories\\serialnumberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\services\\iserialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:services\\iserialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|c:\\users\\habeebrahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|c:\\users\\habeebrahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\methods\\zpltextwidth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:methods\\zpltextwidth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\models\\listserialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:models\\listserialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\repositories\\serialnumberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:repositories\\serialnumberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\services\\configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:services\\configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\services\\iserialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:services\\iserialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B69AD4B-945E-48B2-A2C0-F49261F378D5}|tcomp-barcode-printing.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,76 +50,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "ZPLTextWidth.cs",
+              "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Methods\\ZPLTextWidth.cs",
+              "RelativeDocumentMoniker": "Methods\\ZPLTextWidth.cs",
+              "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Methods\\ZPLTextWidth.cs",
+              "RelativeToolTip": "Methods\\ZPLTextWidth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T08:57:13.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowAEBAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Form1.Designer.cs*",
+              "RelativeToolTip": "Form1.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-19T11:32:13.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAIAwwA8AAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAMwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T11:15:59.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SerialNumberRepository.cs",
               "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Repositories\\SerialNumberRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\SerialNumberRepository.cs",
               "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Repositories\\SerialNumberRepository.cs",
               "RelativeToolTip": "Repositories\\SerialNumberRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T10:35:25.376Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ISerialNumber.cs",
               "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Services\\ISerialNumber.cs",
               "RelativeDocumentMoniker": "Services\\ISerialNumber.cs",
               "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Services\\ISerialNumber.cs",
               "RelativeToolTip": "Services\\ISerialNumber.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAIAwwAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T10:34:56.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-14T10:33:41.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -127,40 +148,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Form1.cs*",
               "RelativeToolTip": "Form1.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T09:47:43.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "ConfigService.cs",
               "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Services\\ConfigService.cs",
               "RelativeDocumentMoniker": "Services\\ConfigService.cs",
               "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Services\\ConfigService.cs",
               "RelativeToolTip": "Services\\ConfigService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAnwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:22:11.059Z"
+              "WhenOpened": "2025-11-14T11:22:11.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "ListSerialNumber.cs",
               "DocumentMoniker": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Models\\ListSerialNumber.cs",
               "RelativeDocumentMoniker": "Models\\ListSerialNumber.cs",
               "ToolTip": "C:\\Users\\HabeebRahman\\source\\repos\\tcomp-barcode-printing\\.vs\\tcomp-barcode-printing\\Models\\ListSerialNumber.cs",
               "RelativeToolTip": "Models\\ListSerialNumber.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAwCgAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAYwDMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T06:23:14.706Z"
+              "WhenOpened": "2025-11-18T06:23:14.706Z",
+              "EditorCaption": ""
             }
           ]
         }
